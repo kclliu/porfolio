@@ -14,3 +14,7 @@ def test_buy_two_stocks():
 def test_empty_portfolio():
     p = Portfolio()
     assert p.cost() == 0.0
+
+def test_cannot_buy_negative_shares():
+    p = Portfolio()
+    p.buy("MSFT", -100, 100.0)
