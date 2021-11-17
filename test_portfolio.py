@@ -1,3 +1,4 @@
+import pytest
 from portfolio import Portfolio
 
 def test_buy_one_stock():
@@ -17,4 +18,5 @@ def test_empty_portfolio():
 
 def test_cannot_buy_negative_shares():
     p = Portfolio()
-    p.buy("MSFT", -100, 100.0)
+    with pytest.raises(ValueError):
+        p.buy("MSFT", -100, 100.0)
