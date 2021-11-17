@@ -20,3 +20,8 @@ def test_cannot_buy_negative_shares():
     p = Portfolio()
     with pytest.raises(ValueError):
         p.buy("MSFT", -100, 100.0)
+
+def test_cannot_buy_zero_shares():
+    p = Portfolio()
+    with pytest.raises(ValueError):
+        p.buy("MSFT", 0, 100.0)
