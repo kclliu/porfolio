@@ -16,6 +16,6 @@ class Portfolio:
 
     def cost(self):
         amt = 0.0
-        for name, share, price in self.stocks:
-            amt += shares*price
+        for name, shares, price in self.stocks:
+            amt += shares * price
         return amt
