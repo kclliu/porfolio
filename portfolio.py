@@ -2,7 +2,7 @@ class Portfolio:
     def __init__(self):
         self.stocks = []
 
-    def buy(name, shares, price):
+    def buy(self, name, shares, price):
         self.stocks.append([name, shares, price])
 
     def cost(self):
