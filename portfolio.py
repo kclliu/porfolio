@@ -1,5 +1,3 @@
-has a method called buy, which adds a new stock to the portfolio, taking 3 arguments
-
 name, a str, the symbol of the stock which is being bought
 shares, an int, the quantity which is being bought
 price, a float, the price paid per share
@@ -10,3 +8,7 @@ Consider that to implement the cost method, you'll need to be storing the purcha
 Commit this file to your repository and push it to GitHub using GitHub Desktop, with a suitable commit message."
 
 class Portfolio:
+    def __buy__(name, shares, price):
+
+    def __cost__():
+        return 
