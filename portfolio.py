@@ -10,3 +10,9 @@ class Portfolio:
         for name, shares, price in self.stocks:
             amt += shares * price
         return amt
+# name, shares, price used a generator function
+# alternative method to write "cost" method
+# def cost(self):
+#     return sum(
+#    shares * price for name, shares, price in self.stocks
+# )  
